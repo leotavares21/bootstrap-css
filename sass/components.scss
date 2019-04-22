@@ -26,9 +26,11 @@
 }
 .portfolio-container .escopo-content .navbarMain .items{
     display: flex;
+    padding: 0;
+    margin-bottom: 2em;
 }
 .portfolio-container .escopo-content .navbarMain .items .item{
-    margin-right: 2vw;
+    margin-right: 1vw;
 }
 .portfolio-container .escopo-content .navbarMain .items a{
     height: 30px;
@@ -60,19 +62,23 @@
 }
 .portfolio-container .escopo-content .port-table .square:nth-child(1){
     border-radius: 20px 0 0 0;
-    background-color: darkblue;
+    background-color: #47389f;
+    background: linear-gradient(to bottom right, #47389f,	#067272);
 }
 .portfolio-container .escopo-content .port-table .square:nth-child(2){
     border-radius: 0 20px 0 0;
-    background-color: darkmagenta;
+    background-color: #5a2da2;
+    background: linear-gradient(to bottom right, #5a2da2,	#b01c66);
 }
 .portfolio-container .escopo-content .port-table .square:nth-child(3){
     border-radius: 0 0 0 20px;
-    background-color: blue;
+    background-color: #2703d5;
+    background: linear-gradient(to bottom right, #2703d5,	#6417a3);
 }
 .portfolio-container .escopo-content .port-table .square:nth-child(4){
     border-radius: 0 0 20px 0;
-    background-color: darkred;
+    background-color: #78511a;
+    background: linear-gradient(to bottom right, #78511a,	#b82053);
 }
 
 
