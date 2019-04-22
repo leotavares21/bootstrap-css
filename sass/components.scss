@@ -1,0 +1,78 @@
+@import "sass/settings";
+
+.portfolio-container{
+    height: 100vh;
+    position: relative;
+}
+.portfolio-container .header-content .title{
+    font-size: 50px;
+    color: $blue-color;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 50%;
+}
+.portfolio-container .header-content .text{
+    font-size: 18px;
+    text-transform: uppercase;
+    color: $gray-color;
+}
+.escopo-content{
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate( -50%, -50%);
+    min-height: 60%;
+}
+.portfolio-container .escopo-content .navbarMain .items{
+    display: flex;
+}
+.portfolio-container .escopo-content .navbarMain .items .item{
+    margin-right: 2vw;
+}
+.portfolio-container .escopo-content .navbarMain .items a{
+    height: 30px;
+    width: 30px;
+    display: block;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.portfolio-container .escopo-content .navbarMain .items a[href*="linkedin.com"]{
+    background-image: url(../img/linkedin.png);
+}
+.portfolio-container .escopo-content .navbarMain .items a[href*="github.com"]{
+    background-image: url(../img/github-logo.png);
+}
+
+.portfolio-container .escopo-content .port-table{
+    margin: 0 auto;
+}
+.portfolio-container .escopo-content .port-table .square{
+    width: 45%;
+    height: 150px;
+    margin: 3px;
+    background-color: #999;
+    float: left;
+    text-align: center;
+    color: $light-color;
+    line-height: 150px;
+}
+.portfolio-container .escopo-content .port-table .square:nth-child(1){
+    border-radius: 20px 0 0 0;
+    background-color: darkblue;
+}
+.portfolio-container .escopo-content .port-table .square:nth-child(2){
+    border-radius: 0 20px 0 0;
+    background-color: darkmagenta;
+}
+.portfolio-container .escopo-content .port-table .square:nth-child(3){
+    border-radius: 0 0 0 20px;
+    background-color: blue;
+}
+.portfolio-container .escopo-content .port-table .square:nth-child(4){
+    border-radius: 0 0 20px 0;
+    background-color: darkred;
+}
+
+
