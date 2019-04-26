@@ -28,7 +28,6 @@
 }
 .portfolio-container .escopo-content .navbarMain .items{
     display: flex;
-    padding: 0;
     margin-bottom: 2em;
 }
 .portfolio-container .escopo-content .navbarMain .items .item{
@@ -54,7 +53,6 @@
 
 .portfolio-container .escopo-content .port-table{
     margin: 0 auto;
-    padding: 0;
 }
 .portfolio-container .escopo-content .port-table .squares{
     width: 140px;
@@ -66,13 +64,23 @@
     font-size: 1.2em;
     text-transform: uppercase;
     font-weight: bold;
-}
-.portfolio-container .escopo-content .port-table .squares a{
     color: $light-color;
-    padding-bottom: 8px;
-    border-bottom: 4px solid $light-color;
-    text-decoration: none;
+    position: relative;
+    cursor: pointer;
 }
+.portfolio-container .escopo-content .port-table .squares::after{
+    content: '';
+    display: block;
+    background-image: url(../img/barra.jpg);
+    width: 45px;
+    height: 4px;
+    background-size: contain;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .portfolio-container .escopo-content .port-table .squares:nth-child(1){
     border-radius: 20px 0 0 0;
     background-color: #47389f;
@@ -120,12 +128,38 @@
     bottom: 10%;
 }
 .img-container .img-title h2{
-    font-size: .8em;
+    font-size: 0.8em;
     text-transform: uppercase;
-    font-weight: 300;
     letter-spacing: 1px;
     display: flex;
     align-items: center;
 }
 
-
+/* modal */@at-root
+.modal-container{
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.modal-container .modal-cont{
+    width: 60%;
+    background-color: $light-color;
+    margin: 4% auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+.modal-container .modal-cont .fechar{
+    color: $gray-color;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+}
+.modal-container .modal-cont .fechar:hover{
+    color: $dark-color;
+    cursor: pointer;
+}

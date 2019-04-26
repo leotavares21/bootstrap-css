@@ -1,6 +1,11 @@
 body{
+    position: relative;
     overflow: hidden;
 }
+*{
+    padding: 0px;
+}
+
 ul{
     list-style: none;
 }
