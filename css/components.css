@@ -188,3 +188,50 @@
   opacity: 1;
   z-index: 2;
   transition: 0.5s; }
+
+/*modal skill */
+#modalSkills .modal-cont .modalBody {
+  margin-top: 2em; }
+
+#modalSkills .modal-cont .modalBody span {
+  display: block;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px; }
+
+#modalSkills .modal-cont .modalBody span::before {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px; }
+
+#modalSkills .modal-cont .modalBody span:nth-child(1)::before {
+  content: '';
+  background-image: url(../img/html-5.png); }
+
+#modalSkills .modal-cont .modalBody span:nth-child(2)::before {
+  content: '';
+  background-image: url(../img/css.png); }
+
+#modalSkills .modal-cont .modalBody span:nth-child(3)::before {
+  content: '';
+  background-image: url(../img/js.png); }
+
+#modalSkills .modal-cont .modalBody span:nth-child(4)::before {
+  content: '';
+  background-image: url(../img/wordpress.png); }
+
+#modalSkills .modal-cont .modalBody span:nth-child(5)::before {
+  content: '';
+  background-image: url(../img/jquery.png); }
+
+#modalSkills .modal-cont .modalBody span:nth-child(6)::before {
+  content: '';
+  background-image: url(../img/bootstrap.png); }
+
+#modalSkills .modal-cont .modalBody span:nth-child(7)::before {
+  content: '';
+  background-image: url(../img/sass.png); }
