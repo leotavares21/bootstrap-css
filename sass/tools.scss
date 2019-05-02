@@ -1,0 +1,6 @@
+
+@mixin bg-font-text($bg-clip){
+    background-clip: $bg-clip;
+    -webkit-background-clip: $bg-clip;
+}
+
