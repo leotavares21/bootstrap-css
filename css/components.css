@@ -296,19 +296,55 @@
   content: '';
   background-image: url(../img/sass.png); }
 
+/* modal portfolio */
+#modalPort .modal-cont .modalBody .acessar {
+  background-color: #2703d5;
+  background: linear-gradient(90deg, #2703d5, #6417a3);
+  padding: 0.7em;
+  border-radius: 0.2em;
+  text-decoration: none;
+  color: #fff; }
+
 /* modal contato */
-#modalContato .modal-cont .modalBody .dados {
-  width: 100%;
-  margin-bottom: 0.65em; }
-
 #modalContato .modal-cont .modalBody label {
-  display: block; }
+  display: block;
+  margin-bottom: 0.3em;
+  font-size: 0.8em; }
 
-#modalContato .modal-cont .modalBody input:nth-child(2) {
-  display: inline-block;
+#modalContato .modal-cont .modalBody input {
+  margin-bottom: 0.8em;
+  height: 2.5em;
+  border: 0.1em solid #b6b6b6; }
+
+#modalContato .modal-cont .modalBody .nome input {
   width: 49%;
-  margin-right: 0.75em; }
+  float: left;
+  position: relative; }
 
-#modalContato .modal-cont .modalBody input:nth-child(3) {
-  display: inline-block;
-  width: 49%; }
+#modalContato .modal-cont .modalBody .nome input:nth-child(2) {
+  margin-right: 2%; }
+
+#modalContato .modal-cont .modalBody .tel input, #modalContato .modal-cont .modalBody .email input {
+  width: 100%; }
+
+#modalContato .modal-cont .modalBody .msg textarea {
+  width: 100%;
+  height: 15vh;
+  border: 0.1em solid #b6b6b6; }
+
+#modalContato .modal-cont .modalBody .button button {
+  background-color: #78511a;
+  background: linear-gradient(90deg, #78511a, #b82053);
+  border: none;
+  border-radius: 0.2em;
+  padding: 0.7em 1em;
+  margin: 1em 0;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer; }
+
+#modalContato .modal-cont .modalBody .eletronic-address {
+  text-align: center;
+  line-height: 1.8em; }

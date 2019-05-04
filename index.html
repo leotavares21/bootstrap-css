@@ -78,9 +78,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas efficitur ligula et bibendum egestas. Nullam tincidunt sapien sed magna aliquet, vel volutpat dolor egestas. Vestibulum in velit quis tortor auctor finibus ut vitae eros. Nam non vestibulum leo. Morbi consequat euismod felis sed blandit. Vivamus finibus ultricies velit, et bibendum metus maximus vel. Nulla convallis condimentum accumsan. Praesent ut lacinia felis. Fusce eu tellus ut erat laoreet hendrerit. Pellentesque eget augue orci. Pellentesque in odio vel lectus lobortis consequat. Etiam at massa vel massa dapibus aliquam. Vestibulum pellentesque, sapien vel rutrum semper, eros elit consectetur turpis, ac luctus sem mi vehicula velit. Cras a ante eget ipsum interdum imperdiet sed vel felis. Quisque sed risus nec enim fermentum fermentum. Fusce feugiat est at ipsum ultricies consectetur.</p>
                 </div>
 
-                <div class="modalFooter fSobre">
-
-                </div>
+                <div class="modalFooter fSobre"></div>
             </div>
           
         </div>
@@ -145,9 +143,7 @@
                     </div>
                 </div>
 
-                <div class="modalFooter fSkill">
-
-                </div>
+                <div class="modalFooter fSkill"></div>
             </div>
           
         </div>
@@ -165,12 +161,10 @@
                         <div class="port-content">
 
                         </div>
-                        <a href="#">Acessar</a>
+                        <a href="#" class="acessar">Acessar</a>
                 </div>
 
-                <div class="modalFooter fPort">
-
-                </div>
+                <div class="modalFooter fPort"></div>
 
             </div>
           
@@ -185,30 +179,45 @@
                 </div>
 
                 <div class="modalBody">
-                    <form action="" method="post" name="contato">
-                        <label for="nome">Nome:</label>
-                        <input type="text" name="nome" class="dados">
-                        <input type="text" name="nome" class="dados">
 
-                        <label for="tel">Telefone:</label>
-                        <input type="text" name="tel" class="dados">
+                    <form action="index.php" method="post">
+                        <div class="nome">
+                            <label for="name">Nome *</label>
+                            <input type="text" name="nome" placeholder=" Nome"/>
+                            <input type="text" name="nome" placeholder=" Sobrenome"/>
+                        </div>
 
-                        <label for="email">Email:</label>
-                        <input type="email" name="email" class="dados">
+                        <div class="tel">
+                            <label for="tel">Telefone *</label>
+                            <input type="text" name="tel">
+                        </div>
 
-                        <label for="msg">Mensagem:</label>
-                        <textarea name="msg" class="contato"></textarea>
+                        <div class="email">
+                            <label for="mail">E-mail *</label>
+                            <input type="email" name="mail" />
+                        </div>
 
-                        <input type="submit">
+                        <div class="msg">
+                            <label for="msg">Mensagem *</label>
+                            <textarea name="msg"></textarea>
+                        </div>
+
+                        <div class="button">
+                            <button type="submit">Enviar</button>
+                        </div>
+
                     </form>
 
-                        meu Telefone
-                        meu email
+                        <div class="eletronic-address">
+                            <h2>Telefone:</h2>
+                            <p>(11) 98301-8613</p>
+
+                            <h2>E-mail:</h2>
+                            <p>leonardo.bonfim@outlook.com</p>
+                        </div>
                 </div>
 
-                <div class="modalFooter fContato">
-
-                </div>
+                <div class="modalFooter fContato"></div>
             </div>
           
         </div>
