@@ -18,10 +18,10 @@
     </head>
     <body>
         
-        <main class="row">
-            <section class="portfolio-container col-8">
+        <main class="row escopo-main">
+            <section class="portfolio-container">
 
-                <div class="escopo-content">
+                <div class="escopo-content ">
                     <header class="header-content">
                         <h1 class="title">Leonardo Tavares</h1>
                         <p class="text">Desenvolvedor Web</p>
@@ -30,7 +30,7 @@
                             <ul class="items">
                                 <li><a href="https://linkedin.com" class="item">Linkedin</a></li>
                                 <li><a href="https://github.com" class="item">Github</a></li>
-                                <span class="item-text">- conncect me</span>
+                                <span class="item-text"> - connect me</span>
                             </ul>
                         </nav>
 
@@ -57,14 +57,46 @@
                 </div>
 
              </section>
+
+
                 
 
-            <section class="col-4 img-container">
+            <section class="img-container">
+                <span class="btn-img" draggable="true">arraste</span>
+
                 <div class="img-text">
-                    <p>Desenvolvedor web com enfase em front-end e wordpress</p>
+                    <p>Desenvolvedor front-end</p>
                 </div>
             </section>
+
         </main>
+
+        <style>
+            .mudar{
+                transform: translateX(0%);
+            }
+        
+        </style>
+
+        <script>
+                let btn_img = document.querySelector(".btn-img");
+
+                let btn_container = document.querySelector(".img-container");
+
+                btn_img.addEventListener("touchmove", () => {
+                    if(btn_container.style.transform == "translateX(100%)"){
+                        btn_container.style.transform = "translateX(0%)";
+                    }else{
+                        btn_container.style.transform = "translateX(100%)";
+                    }
+                });
+        
+
+        </script>
+
+
+
+
 
         <div id="modalSobre" class="modal-container">
     
@@ -93,7 +125,7 @@
 
                 <div class="modalBody">
                     <div class="barra-content">
-                        <span>html 5</span>
+                        <span>html</span>
                             <div class="barra-skill">
                                 <p class="barra-html">90%</p>
                             </div>
@@ -157,9 +189,11 @@
                 </div>
 
                 <div class="modalBody">
-                    <p>Acesse o link para ver alguns dos meus trabalhos.</p>
+                    <p>Acesse o link para ver alguns projetos.</p>
                         <div class="port-content">
-
+                            <a href="">
+                                <img src="img/portfolio-img.jpg" alt="imagem do portfolio" class="port-img">
+                            </a>
                         </div>
                         <a href="#" class="acessar">Acessar</a>
                 </div>
@@ -172,7 +206,7 @@
 
         <div id="modalContato" class="modal-container">
     
-            <div class="modal-cont">
+            <div class="modal-cont exc">
               <span class="fechar fecharCont">&times;</span>
                 <div class="modalHeader">
                     <h2>Contato</h2>
@@ -209,7 +243,7 @@
                     </form>
 
                         <div class="eletronic-address">
-                            <h2>Telefone:</h2>
+                            <h2>Telefone / Zap:</h2>
                             <p>(11) 98301-8613</p>
 
                             <h2>E-mail:</h2>

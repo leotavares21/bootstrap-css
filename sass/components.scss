@@ -1,10 +1,14 @@
 @import "sass/settings";
 @import "sass/tools.scss";
-
+escopo-main{
+    position: relative;
+}
 .portfolio-container{
+    width: 70vw;
     height: 100vh;
     position: relative;
 }
+
 .portfolio-container .header-content .title{
     font-size: 3em;
     font-family: 'Lucida Grande', sans-serif;
@@ -24,8 +28,8 @@
     text-transform: uppercase;
     color: $gray-color;
 }
+
 .escopo-content{
-    width: 35%;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -37,11 +41,13 @@
     margin-bottom: 2em;
 }
 .portfolio-container .escopo-content .navbarMain .items .item{
-    margin-right: 1vw;
+    margin-right: 15px;
 }
 .portfolio-container .escopo-content .navbarMain .items .item-text{
     font-family: 'Arial', sans-serif;
     font-weight: bold;
+    height: 15px;
+    line-height: 15px;
 }
 .portfolio-container .escopo-content .navbarMain .items a{
     height: 1.5em;
@@ -62,19 +68,36 @@
     margin: 0 auto;
 }
 .portfolio-container .escopo-content .port-table .squares{
-    width: 8em;
-    height: 8em;
+    width: 35%;
+    height: 7.5em;
     margin: 0.2em;
     float: left;
-    text-align: center;
-    line-height: 8em;
-    font-size: 1.2em;
+    font-size: 0.9em;
+    line-height: 7.5em;
     text-transform: uppercase;
     font-weight: bold;
     color: $light-color;
     position: relative;
     cursor: pointer;
+    text-align: center;
 }
+@media(max-width: 440px){
+    .portfolio-container .header-content .title{ 
+       font-size: 2em;
+    }
+    .portfolio-container .header-content .text{
+        font-size: 0.8em;
+    }
+    .portfolio-container .escopo-content .port-table .squares{
+        font-size: 0.6em;
+        height: 8.5em;
+        line-height: 8.5em;
+    }
+    .portfolio-container .escopo-content .navbarMain .items .item-text{
+        font-size: 0.8em;
+    }
+}
+
 .portfolio-container .escopo-content .port-table .squares::after{
     content: '';
     display: block;
@@ -109,11 +132,42 @@
 }
 
 .img-container{
+    height: 100vh;
+    width: 30vw;
     background-image: url(../img/pc-img.jpg);
     background-size: cover;
     padding: 0;
     position: relative;
 }
+.img-container .btn-img{
+    background-image: url(../img/seta.png);
+    text-indent: -9999px;
+    background-size: contain;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 50%;
+    right: 105%;
+    display: none;
+}
+
+@media(max-width: 800px){
+    .img-container{
+        width: 40vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 5;
+        transition: 0.7s;
+        transform: translateX(100%);
+    }
+    .img-container .btn-img{
+        display: block;
+        transition: 0.5s;
+    }
+}
+
 .img-container::before{
     content: '';
     display: inline-block;
@@ -123,8 +177,7 @@
     opacity: 0.7;
 }
 .img-container .img-text{
-    width: 30vw;
-    height: 10vh;
+    width: 80%;
     padding: 1em;
     background-color: rgba(0,0,0,.5);
     color: $light-color;
@@ -143,6 +196,17 @@
     align-items: center;
 }
 
+@media(max-width: 620px){
+    .img-container .img-text{
+        width: 90%;
+        padding: 1em;
+        top: 50%;
+        transform: translatey(-50%);
+        max-height: 10vh;
+    }
+}
+
+
 /* modal */
 .modal-container{
     background-color: rgba(0,0,0,0.4);
@@ -159,14 +223,24 @@
     font-weight: bold;
     margin-bottom: 0.7em;
 }
-.modal-container .modal-cont{
+.modal-container .modal-cont{ 
     width: 60%;
     background-color: $light-color;
-    margin: 4% auto;
-    padding: 1.2em;
+    margin-top: 4%;
     border-radius: 1em;
     box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
     position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2.5em  1em;
+}
+.modal-container .exc{
+    padding: 1em;
+}
+@media(max-width: 1024px){
+    .modal-container .modal-cont{
+        width: 80%;
+    }
 }
 .modal-container .modal-cont .fechar{
     color: $gray-color;
@@ -308,15 +382,51 @@
     background-image: url(../img/sass.png);
 }
 
-/* modal portfolio */
+@media(max-width: 1024px){
+    #modalSkills .modal-cont .modalBody .barra-content .barra-skill{
+        margin-left: 50px;
+        width: 60%;
+    }
+    #modalSkills .modal-cont .modalBody .barra-content span{
+        font-size: 0.7em;
+        font-weight: bolder;
+    }
+    #modalSkills .modal-cont .modalBody .barra-content::before{
+        margin-right: 10px;
+    }
+}
 
+@media(max-width: 350px){
+    #modalSkills .modal-cont .modalBody .barra-content span{
+        font-size: 0.6em;
+    }
+    #modalSkills .modal-cont .modalBody .barra-content .barra-skill{
+        height: 0.7em;
+        line-height: 0.7em;
+    }
+}
+
+/* modal portfolio */
+#modalPort .modal-cont .modalBody .port-content .port-img{
+    max-width: 50vw;
+    height: auto;
+    margin: 20px 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
 #modalPort .modal-cont .modalBody .acessar{
     background-color: #2703d5;
     background: linear-gradient(90deg , #2703d5,	#6417a3);
+    font-size: 0.8em;
     padding: 0.7em;
     border-radius: 0.2em;
     text-decoration: none;
     color: $light-color;
+    position: relative;
+    left: 0;
+    transform: translateX(-45%);
 }
 
 /* modal contato */
@@ -368,5 +478,4 @@
     text-align: center;
     line-height: 1.8em;
 }
-
 
