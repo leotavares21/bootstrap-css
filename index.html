@@ -18,7 +18,7 @@
     </head>
     <body>
         
-        <main class="row escopo-main">
+        <main class="escopo-main">
             <section class="portfolio-container">
 
                 <div class="escopo-content ">
@@ -58,11 +58,7 @@
 
              </section>
 
-
-                
-
             <section class="img-container">
-                <span class="btn-img" draggable="true">arraste</span>
 
                 <div class="img-text">
                     <p>Desenvolvedor front-end</p>
@@ -70,33 +66,6 @@
             </section>
 
         </main>
-
-        <style>
-            .mudar{
-                transform: translateX(0%);
-            }
-        
-        </style>
-
-        <script>
-                let btn_img = document.querySelector(".btn-img");
-
-                let btn_container = document.querySelector(".img-container");
-
-                btn_img.addEventListener("touchmove", () => {
-                    if(btn_container.style.transform == "translateX(100%)"){
-                        btn_container.style.transform = "translateX(0%)";
-                    }else{
-                        btn_container.style.transform = "translateX(100%)";
-                    }
-                });
-        
-
-        </script>
-
-
-
-
 
         <div id="modalSobre" class="modal-container">
     
