@@ -5,4 +5,4 @@ body {
 
 @media (max-width: 1024px) {
   body {
-    overflow-y: scroll; } }
+    overflow: auto; } }

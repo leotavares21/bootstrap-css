@@ -308,6 +308,9 @@
 #modalSkills .modal-cont .modalBody .barra-content .barra-skill .barra-bt {
   width: 70%; }
 
+#modalSkills .modal-cont .modalBody .barra-content .barra-skill .barra-ps {
+  width: 55%; }
+
 #modalSkills .modal-cont .modalBody .barra-content .barra-skill .barra-jq {
   width: 40%; }
 
@@ -315,6 +318,7 @@
   width: 50%; }
 
 #modalSkills .modal-cont .modalBody .barra-content span {
+  font-size: 0.8em;
   font-weight: bold;
   text-transform: uppercase;
   display: flex;
@@ -351,9 +355,13 @@
 
 #modalSkills .modal-cont .modalBody .barra-content:nth-child(6)::before {
   content: '';
-  background-image: url(../img/jquery.png); }
+  background-image: url(../img/ps.png); }
 
 #modalSkills .modal-cont .modalBody .barra-content:nth-child(7)::before {
+  content: '';
+  background-image: url(../img/jquery.png); }
+
+#modalSkills .modal-cont .modalBody .barra-content:nth-child(8)::before {
   content: '';
   background-image: url(../img/sass.png); }
 
