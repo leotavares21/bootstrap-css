@@ -201,8 +201,7 @@
 
 .modal-container .modal-cont .modalHeader h2 {
   font-size: 1.5em;
-  font-weight: bold;
-  margin-bottom: 0.7em; }
+  font-weight: bold; }
 
 .modal-container .modal-cont {
   width: 60%;
@@ -264,7 +263,7 @@
 
 /*modal skill */
 #modalSkills .modal-cont .modalBody {
-  margin-top: 2em;
+  margin-top: 20px;
   overflow: scroll;
   height: 55vh;
   width: 100%;
@@ -366,6 +365,8 @@
   background-image: url(../img/sass.png); }
 
 @media (max-width: 1024px) {
+  #modalSkills .modal-cont .modalBody {
+    margin-top: 0; }
   #modalSkills .modal-cont .modalBody .barra-content .barra-skill {
     margin-left: 50px;
     width: 60%; }
